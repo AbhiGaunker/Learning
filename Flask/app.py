@@ -7,7 +7,7 @@ def home_page():
     return render_template('index.html')
 
 @app.route('/math',methods = ['POST'])
-def math_operation():
+def math_operation1():
     if(request.method == 'POST'):
         ops = request.form['operation']
         num1 = int(request.form["num1"])
